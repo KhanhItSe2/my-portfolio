@@ -14,3 +14,11 @@ export interface Skill {
   title: string;
   name: string;
 }
+
+
+export interface Project {
+  title: string;
+  technologies: string;
+  description: string[];
+  link: string;
+}
