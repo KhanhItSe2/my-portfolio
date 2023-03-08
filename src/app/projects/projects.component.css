@@ -13,13 +13,12 @@ section ul {
 
 section h2 a {
   text-decoration: none;
-  color: var(--orange)
+  color: var(--orange);
 }
 
 section h3 {
   margin-top: 0.5rem;
   color: var(--gray-light);
-
 }
 
 section ul {
@@ -27,22 +26,31 @@ section ul {
   list-style: circle;
   text-align: justify;
 }
+.note {
+  position: relative;
+  top: 2rem;
+  font-style: italic;
+  font-size: 14px;
+}
 
 /* PC */
 
 :host.pc section {
   margin-left: 5rem;
-  position: relative
+  position: relative;
+}
+:host.pc section h2:hover {
+  opacity: 0.8;
 }
 :host.pc section ul {
   line-height: 1.4rem;
 }
-:host.pc section h3 span:nth-child(2){
+:host.pc section h3 span:nth-child(2) {
   color: white;
 }
 
 :host.pc section::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -54,10 +62,10 @@ section ul {
 }
 
 :host.pc section::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
-  height: 130%;
+  height: 140%;
   left: -50px;
   top: 5px;
 
@@ -67,4 +75,13 @@ section ul {
 
 :host.pc section:last-child:after {
   height: 100%;
+}
+
+:host.pc .note {
+  position: relative;
+  top: 2rem;
+  left: 8rem;
+  font-style: italic;
+  font-size: 14px;
+
 }
