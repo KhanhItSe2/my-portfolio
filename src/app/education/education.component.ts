@@ -11,7 +11,7 @@ export class EducationComponent {
       institute : 'Ton Duc Thang University',
       course: 'Software Engineering',
       duration : '2019-2023',
-      score: '3.23'
+      score: '3.26'
     }
   ]
 
